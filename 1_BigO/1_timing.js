@@ -29,12 +29,10 @@ function timer(func, param) {
   let t1 = performance.now();
   func(param);
   let t2 = performance.now();
-  return `Time Elapsed : ${(t2 - t1) / 1000} seconds.`;
+  return `${func.name} Time Elapsed : ${(t2 - t1) / 1000} seconds.`;
 }
-
-
-console.log(`addUpTo - ${timer(addUpTo, 1000000000)}`);
-console.log(`altAddUpTo - ${timer(altAddUpTo, 1000000000)}`);
 
 // Timing functions are not always reliable. Reliability
 // and precision may not be adequate.
+
+module.exports = timer;
