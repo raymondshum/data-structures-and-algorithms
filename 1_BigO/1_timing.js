@@ -32,6 +32,10 @@ function timer(func, param) {
   return `${func.name} Time Elapsed : ${(t2 - t1) / 1000} seconds.`;
 }
 
+
+console.log(`${timer(addUpTo, 1000000000)}`);
+console.log(`${timer(altAddUpTo, 1000000000)}`);
+
 // Timing functions are not always reliable. Reliability
 // and precision may not be adequate.
 
