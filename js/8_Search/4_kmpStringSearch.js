@@ -20,3 +20,11 @@
  * a b c d e a b f a b c  [string]
  * 0 0 0 0 0 1 2 0 1 2 3  [table (index+1)] <- Prob. cause 0 show neg. res.
  */
+
+/**
+ * Algorithm trace
+ */
+
+/**
+ * Return to implement
+ */
