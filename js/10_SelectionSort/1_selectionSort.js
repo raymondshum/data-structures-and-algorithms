@@ -2,6 +2,8 @@
  * Selection Sort
  * 
  * Time Complexity: O(n^2)
+ * 
+ * Good when you want to minimize the number of swaps you're making.
  */
 
 /**
