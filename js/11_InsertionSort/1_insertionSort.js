@@ -34,9 +34,20 @@
 function insertionSort(arr) {
   for (var i = 1; i < arr.length; i++) {
     let currentVal = arr[i];
+    /**
+     * Left side of the array contains sorted elements. Compares
+     * first element of right side to elements on left. Shifts
+     * each element right by replacing right element with element
+     * pointed at by j. Loop breaks once currentVal is > arr[j].
+     */
     for (var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
       arr[j+1] = arr[j];
     }
+    // arr[j] is now > currentVal or j == 0. Insert currentVal
+    // at location to the right of j.
+    // Position will be -1 if currentVal is the smallest in the
+    // array
+    console.log(`Position: ${j} | Value: ${arr[j]} | currentVal: ${currentVal}`);
     arr[j+1] = currentVal;
   }
   return arr;
