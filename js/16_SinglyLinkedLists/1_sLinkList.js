@@ -19,6 +19,10 @@
  * with elements that you access in order, then linked lists are good.
  * 
  * Use if you don't care about random access times.
+ * Use when insertion and deletion at the beginning are frequently
+ * required.
+ * Arrays contain a built in index while linked lists do not.
+ * 
  */
 
 /**
