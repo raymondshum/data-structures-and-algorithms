@@ -14,6 +14,11 @@
  *
  * You want a linked list when you're dealing with many insertions and
  * deletions. You do not have to reindex a linked list.
+ * 
+ * Linked lists excel at insertion and deletion. If you want a huge list
+ * with elements that you access in order, then linked lists are good.
+ * 
+ * Use if you don't care about random access times.
  */
 
 /**
