@@ -14,7 +14,14 @@
  */
 
 /**
+ * Complexity
+ */
+
+/**
  * Implementation
+ * 
+ * O(1) - Insertion and Removal
+ * O(N) - Searching and Access
  */
 
 class Node {
